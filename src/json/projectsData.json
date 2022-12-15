@@ -1,0 +1,29 @@
+[
+  {
+    "id": 3,
+    "name": "CRUD Users",
+    "type": "Frontend ▪ React.js",
+    "image": "crud-users.webp",
+    "description": "Sitio que implementa los métodos http: GET, POST, PUT/PATCH, DELETE",
+    "github": "https://github.com/diegosisalima/crud-users.git",
+    "netlify": "https://sisalima-crud-users.netlify.app/"
+  },
+  {
+    "id": 1,
+    "name": "Clima",
+    "type": "Frontend ▪ React.js",
+    "image": "app-clima.webp",
+    "description": "Sitio que accede a tu ubicación para proveer datos del clima local.",
+    "github": "https://github.com/diegosisalima/weather-app",
+    "netlify": "https://sisalima-weather.netlify.app/"
+  },
+  {
+    "id": 2,
+    "name": "Wiki, Rick and Morty",
+    "type": "Frontend ▪ React.js",
+    "image": "rick-and-morty.webp",
+    "description": "Sitio que busca los residentes según su locación de la serie Rick and Morty",
+    "github": "https://github.com/diegosisalima/rick-and-morty.git",
+    "netlify": "https://sisalima-rick-and-morty.netlify.app/"
+  }
+]

@@ -1,0 +1,126 @@
+.contact {
+  --contact-color-primary: #1abc9c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  border-color: var(--contact-color-primary);
+  /* height: 600px; */
+  flex-wrap: wrap;
+}
+.contact-title {
+  padding: 1rem 0 3rem 0;
+}
+.contact-cards {
+  display: flex;
+  flex-direction: column;
+}
+.contact-card {
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+.contact-card .bxs-envelope,
+.contact-card .bxs-phone {
+  font-size: 1.5rem;
+  color: var(--contact-color-primary);
+}
+.messenger {
+  justify-content: center;
+}
+.contact-card .bxl-whatsapp,
+.contact-card .bxl-telegram {
+  font-size: 1.5rem;
+}
+.contact-card .br {
+  background: var(--contact-color-primary);
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.a-text {
+  color: #bab8b1;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+form.login {
+  /*variables*/
+  --max-width-form: 900px;
+  --bg-color-form: transparent;
+  --color: whitesmoke;
+  --color-placeholder: gray;
+  --bg-color-button: var(--contact-color-primary);
+
+  padding: 1rem;
+  text-align: center;
+  min-width: calc(375px - (16px * 2));
+  background-color: var(--bg-color-form);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid gray;
+  flex-grow: 0.5;
+  height: min-content;
+}
+form.login > * {
+  color: var(--color);
+}
+form.login .input {
+  min-height: 24px;
+  background-color: #19181a99;
+  border-style: none;
+  border-radius: 6px;
+  padding: 0 0.5rem;
+  font-size: 16px;
+  width: 100%;
+}
+form.login .border {
+  border-bottom: solid 2px #cbd8df50;
+  transition: border-bottom 0.3s linear;
+}
+form.login .border:hover {
+  border-bottom: solid 1px #cbd8df;
+}
+form.login .border:focus {
+  outline: none;
+  border-bottom: solid 1px #cbd8df;
+}
+form.login .input::placeholder {
+  color: var(--color-placeholder);
+  font-size: 16px;
+}
+form.login textarea.input {
+  border: solid 1px gray;
+  resize: none;
+}
+form.login .button {
+  min-height: 42px;
+  background-color: var(--bg-color-button);
+  color: whitesmoke;
+  font-size: large;
+  border-radius: 6px;
+}
+form.login .button:hover {
+  cursor: pointer;
+  opacity: 0.75;
+}
+.login .button {
+  margin: 5px;
+  background-color: transparent;
+  border: none;
+}
+@media screen and (max-width: 375px) {
+  .contact {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  form.login {
+    height: 320px;
+  }
+}

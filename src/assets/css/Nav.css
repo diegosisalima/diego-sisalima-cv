@@ -1,0 +1,120 @@
+/*BARRA DE NAVEGACION*/
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 89;
+}
+.nav {
+  /* variables del nav */
+  --height-nav: 40px;
+  --width-nav: auto;
+  --bg-nav: transparent;
+  --color: var(--text-color);
+  --bg-a-hover: none;
+  --color-a-hover: chocolate;
+
+  width: var(--width-nav);
+  height: var(--height-nav);
+  background: var(--bg-nav);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  /* position: sticky;
+  top: 0;
+  z-index: 89; */
+}
+/*NAVEGACION 1 - LOGO*/
+.nav img {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+.nav .logo {
+  height: var(--height-nav);
+}
+.nav .logo > a {
+  width: auto;
+}
+.nav .logo img {
+  margin-right: 0.5rem;
+}
+/*NAVEGACION 2 - CENTRAL*/
+.nav .menu {
+  display: flex;
+  gap: 1rem;
+}
+.nav li {
+  height: var(--height-nav);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav a {
+  display: flex;
+  align-items: center;
+  color: var(--color);
+  height: calc(var(--height-nav) - 10px);
+  border-radius: 8px;
+  transition: color 0.25s linear, transform 0.2s ease-in,
+    background-color 0.5s linear;
+}
+.nav a:hover {
+  color: var(--color-a-hover);
+  background: var(--bg-a-hover);
+  transform: scale(1.1);
+}
+
+/*NAVEGACION 3 - ICONOS*/
+.nav .icons {
+  display: flex;
+  gap: 0.5rem;
+}
+/*RESPOSIVE*/
+.nav .btn-menu {
+  display: none;
+}
+.nav .btn-menu svg {
+  fill: var(--text-color);
+  height: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .nav .btn-menu {
+    display: block;
+  }
+  .nav .bx-menu {
+    font-size: var(--height-nav);
+  }
+  .nav {
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+
+  .nav .menu {
+    position: absolute;
+    margin-top: var(--height-nav);
+    background-color: var(--bg-nav);
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    transform: translate(-100%, 0);
+  }
+  .nav .menu.active {
+    transform: translate(0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  .nav a {
+    width: 95%;
+    justify-content: center;
+  }
+  .nav a:hover {
+    transform: scale(1.05);
+  }
+}
+/*iconos de https://boxicons.com/usage*/
+.bx {
+  color: white;
+  font-size: xx-large;
+}

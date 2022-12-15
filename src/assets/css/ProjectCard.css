@@ -1,0 +1,59 @@
+.project-card {
+  --portfolio-color-primary: #d74a49;
+  border-color: var(--portfolio-color-primary);
+
+  background: transparent;
+  padding-top: 1rem;
+  border-radius: 1rem;
+  box-shadow: 1px -1px 3px var(--portfolio-color-primary);
+  width: 300px;
+  /* border: 1px solid var(--portfolio-color-primary); */
+}
+.project-card .img-item {
+  display: block;
+  padding: 1rem 1rem;
+  /* min-height: 350px; */
+}
+.project-card .title {
+  font-size: larger;
+}
+.project-card .subtitle {
+  font-family: "Raleway", sans-serif;
+  opacity: 0.4;
+}
+.project-card .description {
+  padding: 0rem 1rem 1rem 1rem;
+  /* text-align: justify; */
+  opacity: 0.8;
+}
+.project-card .a-btns {
+  padding-bottom: 0.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+}
+.a-btns .a-btn {
+  border: 1px solid var(--portfolio-color-primary);
+  /* background-color: var(--portfolio-color-primary); */
+}
+.bxs-info-circle:hover,
+.bxl-github:hover {
+  transform: scale(1.2);
+}
+.a-btn .bx-link-external {
+  font-size: 1.2rem;
+}
+
+.a-btn {
+  display: flex;
+  align-items: center;
+  color: var(--color);
+  height: calc(var(--height-nav) - 10px);
+  border-radius: 8px;
+  transition: color 0.25s linear, transform 0.07s linear,
+    background-color 0.5s linear;
+  padding: 0.5rem 1rem;
+}
+.trans-scale {
+  transition: transform 150ms linear;
+}

@@ -1,0 +1,146 @@
+/*utilidades------------------------------*/
+.trans-scale {
+  transition: transform 150ms linear;
+}
+.gradient-text {
+  animation: gradient 5s ease-out infinite;
+  background-image: linear-gradient(45deg, rgb(161, 132, 240), #2fdabd);
+  background-color: rgb(161, 132, 240);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: -80rem 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+/*page style--------------------------------*/
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background: #d2691e50; */
+}
+.about-title {
+  padding: 1rem 0 3rem 0;
+}
+.info-personal {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.about .bxs-map,
+.about .bxs-cake,
+.about .bxs-videos {
+  font-size: 1rem;
+}
+.about .profiles {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.about .profiles .profile > * {
+  padding: 0.5rem 0;
+}
+.about .profile .box-img {
+  width: 290px;
+  height: 350px;
+}
+.about .profile .img-diego {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+.about .profile p.name {
+  font-size: xx-large;
+  padding: 3px;
+}
+.about .profile p.service {
+  text-align: center;
+  text-transform: uppercase;
+  border-top: 2px solid green;
+  padding: 3px;
+}
+.about .profile .icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.about .profile .icons .bx {
+  font-size: 2.5rem;
+}
+.about .profile .bx:hover {
+  transform: scale(1.2);
+}
+.about .profile .btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.about .profile .btns .a-btn {
+  background-color: chocolate;
+  width: 6.5rem;
+  padding: 0.3rem;
+  border: solid 1px transparent;
+  place-content: center;
+}
+.about .profile .btns .a-btn:hover {
+  border: solid 1px #646cff;
+}
+.about .profile .btns .bx {
+  font-size: 1rem;
+}
+.about .profile .btns .bxs-download {
+  font-size: 1.4rem;
+}
+/*--------------------------------------------------------------------*/
+
+.about section.description {
+  min-width: 375px;
+  max-width: 30rem;
+}
+.about section.description > * {
+  padding: 1.5rem 0;
+}
+.about legend {
+  font-size: x-large;
+  padding: 0 1rem;
+}
+.about .acerca {
+  border: none;
+}
+.about .technologies {
+  border: none;
+  border-top: 2px solid green;
+}
+.about .technologies .bx {
+  font-size: 4rem;
+}
+
+@media screen and (max-width: 1280px) {
+  .about {
+    gap: 1rem;
+  }
+  .about .info-personal .bx {
+    font-size: 14px;
+  }
+  .about .profiles {
+    flex-direction: column;
+  }
+  .about .profiles .profile {
+    padding-bottom: 3rem;
+  }
+  .about section.description .acerca {
+    border-top: 2px solid green;
+  }
+}
