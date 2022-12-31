@@ -1,5 +1,14 @@
 [
   {
+    "id": 5,
+    "name": "Ecommerce",
+    "type": "Frontend ▪ React.js",
+    "image": "ecommerce-acdlo.webp",
+    "description": "funcionalidades básicas de un ecommerce",
+    "github": "https://github.com/diegosisalima/ecommerce-acdlo.git",
+    "netlify": "https://sisalima-ecommerce-acdlo.netlify.app/"
+  },
+  {
     "id": 4,
     "name": "Pokedex",
     "type": "Frontend ▪ React.js",
