@@ -5,9 +5,9 @@ import "../assets/css/Projects.css";
 const Projects = () => {
   return (
     <div className="projects mx-wd-container page-height">
-      <h1 className="projects-title">
+      <h2 className="projects-title h2-page">
         <i class="bx bx-code-alt bx-tada"></i> <br /> Projects
-      </h1>
+      </h2>
       <div className="cards-container">
         <ProjectCard />
       </div>

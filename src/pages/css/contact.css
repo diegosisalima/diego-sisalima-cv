@@ -1,0 +1,47 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact__main {
+  --contact-color-primary: #1abc9c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  border-color: var(--contact-color-primary);
+  flex-wrap: wrap;
+}
+.contact__item {
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+.contact__item .bxs-envelope,
+.contact__item .bxs-phone {
+  font-size: 1.5rem;
+  color: var(--contact-color-primary);
+}
+.contact__small {
+  color: var(--text-color);
+  opacity: 0.5;
+}
+.contact__item-messenger {
+  justify-content: center;
+}
+.contact__item-messenger .bxl-whatsapp,
+.contact__item-messenger .bxl-telegram {
+  font-size: 1.5rem;
+}
+.contact__a {
+  background: var(--contact-color-primary);
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

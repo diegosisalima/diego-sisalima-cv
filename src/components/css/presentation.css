@@ -1,0 +1,115 @@
+/*Utilities*/
+.drop-shadow {
+  filter: drop-shadow(0 10px 8px rgba(0, 0, 0, 0.04))
+    drop-shadow(0 4px 3px rgba(0, 0, 0, 0.1));
+}
+.txt-shadow {
+  text-shadow: -1px -1px 0 #2b2a31, 1px -1px 0 black, -1px 1px 0 #312f3a,
+    1px 1px 12px black;
+}
+.gradient-text {
+  animation: gradient 5s ease-out infinite;
+  background-image: linear-gradient(45deg, rgb(161, 132, 240), #2fdabd);
+  background-color: rgb(161, 132, 240);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: -80rem 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+/*styles*/
+.presentation {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.presentation__img {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  background-color: #2b2a2a;
+}
+.presentation__name {
+  font-family: "Acme", sans-serif;
+  position: relative;
+}
+.presentation__h1-border {
+  color: #1572a1;
+  text-shadow: -1px -1px 0 #58508d, 1px -1px 0 black, -1px 1px 0 #58508d,
+    1px 1px 12px black;
+}
+.presentation__h1-wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  animation: wave 3s ease-in-out infinite;
+}
+@keyframes wave {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 47%,
+      10% 48%,
+      33% 54%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+.presentation__p {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 0.8em;
+}
+.presentation__icons-container {
+  background: #2b2a2a;
+  display: flex;
+  align-content: center;
+  gap: 1.5rem;
+  width: fit-content;
+  margin: 0 auto;
+  border-radius: 1em;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+}
+.presentation__a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.presentation__a:hover {
+  transform: scale(1.2);
+  color: #2fdabd;
+  transition: transform 150ms ease-in-out, color 200ms ease-in-out;
+}

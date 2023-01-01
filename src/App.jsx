@@ -5,7 +5,7 @@ import Nav from "./components/Nav";
 
 function App() {
   return (
-    <div className="App hero-image-filter">
+    <div className="App">
       <HashRouter>
         <Nav />
         <Routes>

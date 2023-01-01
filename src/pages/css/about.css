@@ -1,0 +1,29 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.about__description {
+  max-width: 400px;
+  padding: 0 1rem;
+}
+.about__technologies {
+  border: none;
+  border-top: 2px solid green;
+  padding: 1rem;
+}
+.about__legend {
+  font-size: x-large;
+  padding: 0 1rem;
+}
+.about__technologies .bx {
+  font-size: 4rem;
+}

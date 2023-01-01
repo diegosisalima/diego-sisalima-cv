@@ -1,0 +1,35 @@
+.frm-contact {
+  --width-form: 400px;
+  --frm-bg-input-color: var(--second-color);
+  --frm-text-color: var(--text-color);
+
+  width: var(--width-form);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.frm-contact__input {
+  color: var(--frm-text-color);
+  height: 2.5rem;
+  padding-left: 0.5rem;
+  border: 1px solid transparent;
+  border-radius: 0%;
+  background-color: var(--frm-bg-input-color);
+}
+.frm-contact__input:focus {
+  border: 1px solid var(--first-color);
+}
+.frm-contact__textarea {
+  color: var(--frm-text-color);
+  background-color: var(--frm-bg-input-color);
+  outline: 0;
+  resize: none;
+  border: none;
+  padding: 0.5rem;
+}
+@media screen and (max-width: 900px) {
+  .frm-contact {
+    padding: 0 1rem;
+    width: 100%;
+  }
+}

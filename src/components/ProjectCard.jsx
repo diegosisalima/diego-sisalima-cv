@@ -24,8 +24,14 @@ const ProjectCard = () => {
       <p className="description">{project.description}</p>
       <div className="a-btns">
         <section className="icons">
-          <a href={project.github} target="_blank" title="repositorio">
+          <a
+            href={project.github}
+            target="_blank"
+            title="repositorio"
+            className="a-btn"
+          >
             <i className="bx bxl-github trans-scale"></i>
+            GitHub
           </a>
           {/* <a href="" title="mas información">
             <i className="bx bxs-info-circle trans-scale"></i>

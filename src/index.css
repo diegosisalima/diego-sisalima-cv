@@ -1,18 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
 :root {
   /* font-family: Inter, Avenir, Helvetica, Arial, sans-serif; */
   /* font-family: "Concert One", cursive; */
-  font-family: "Franklin Gothic Medium", "Inter", "Arial Narrow", Arial,
-    sans-serif;
+  /* font-family: "Franklin Gothic Medium", "Inter", "Arial Narrow", Arial,
+    sans-serif; */
+  font-family: "Montserrat", sans-serif;
   --mx-wd-container: 1280px;
   --text-color: rgba(255, 255, 255, 0.87);
-
-  color-scheme: light dark;
-  /* background-color: #242424; */
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
+  --first-color: #242424;
+  --second-color: #2b2a2a;
+  /* color-scheme: dark slight; */
+  /* font-synthesis: none; */
+  /* text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; */
+  background-color: var(--first-color);
 }
 html {
   scroll-behavior: smooth;
@@ -20,42 +23,48 @@ html {
 }
 body {
   overflow-x: hidden;
-  background-image: url("./assets/img/dark-hero-img.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  color: var(--text-color);
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+input {
+  outline: 0;
+  font-family: inherit;
+}
 h1 {
   font-size: 3.2em;
-}
-h2 {
-  font-size: 3em;
 }
 li {
   list-style: none;
 }
 a {
   text-decoration: none;
+  color: var(--text-color);
+  display: block;
 }
-/*color: #535bf2;*/
+a:hover,
+button:hover {
+  cursor: pointer;
+}
 button {
-  border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+  padding: 0.4em 0.8em;
   font-size: 1em;
-  font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  color: inherit;
 }
 button:hover {
-  cursor: pointer;
   border-color: #646cff;
 }
 
@@ -72,6 +81,13 @@ button:hover {
   }
 }
 /*UTILITIES ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+.flex-galery {
+  /* background-color: #fcedf2; */
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .mx-wd-container {
   margin: 0 auto;
   max-width: var(--mx-wd-container);
@@ -85,6 +101,10 @@ button:hover {
   min-height: 100vh;
   backdrop-filter: blur(4px) brightness(0.4);
   -webkit-backdrop-filter: blur(4px) brightness(0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 img {
   width: 100%;
@@ -93,7 +113,14 @@ img {
 }
 .page-height {
   width: 100%;
-  min-height: calc(100vh - 40px);
+  min-height: 100vh;
+  /* min-height: calc(100vh - 40px); */
   text-align: center;
   /* border: 1px solid chocolate; */
+}
+.h2-page {
+  font-family: "Acme", sans-serif;
+  font-size: 2.5em;
+  padding: 1rem 0 3rem 0;
+  text-align: center;
 }
