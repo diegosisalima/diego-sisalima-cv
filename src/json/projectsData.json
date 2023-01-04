@@ -1,47 +1,74 @@
-[
-  {
-    "id": 5,
-    "name": "Ecommerce",
-    "type": "Frontend ▪ React.js",
-    "image": "ecommerce-acdlo.webp",
-    "description": "funcionalidades básicas de un ecommerce",
-    "github": "https://github.com/diegosisalima/ecommerce-acdlo.git",
-    "netlify": "https://sisalima-ecommerce-acdlo.netlify.app/"
-  },
-  {
-    "id": 4,
-    "name": "Pokedex",
-    "type": "Frontend ▪ React.js",
-    "image": "pokedex.webp",
-    "description": "Sitio que implementa: redux, rutas anidadas y protegidas",
-    "github": "https://github.com/diegosisalima/pokedex.git",
-    "netlify": "https://sisalima-pokedex.netlify.app/"
-  },
-  {
-    "id": 3,
-    "name": "CRUD Users",
-    "type": "Frontend ▪ React.js",
-    "image": "crud-users.webp",
-    "description": "Sitio que implementa los métodos http: GET, POST, PUT/PATCH, DELETE",
-    "github": "https://github.com/diegosisalima/crud-users.git",
-    "netlify": "https://sisalima-crud-users.netlify.app/"
-  },
-  {
-    "id": 2,
-    "name": "Wiki, Rick and Morty",
-    "type": "Frontend ▪ React.js",
-    "image": "rick-and-morty.webp",
-    "description": "Sitio que busca los residentes según su locación de la serie Rick and Morty",
-    "github": "https://github.com/diegosisalima/rick-and-morty.git",
-    "netlify": "https://sisalima-rick-and-morty.netlify.app/"
-  },
-  {
-    "id": 1,
-    "name": "Clima",
-    "type": "Frontend ▪ React.js",
-    "image": "app-clima.webp",
-    "description": "Sitio que accede a tu ubicación para proveer datos del clima local.",
-    "github": "https://github.com/diegosisalima/weather-app",
-    "netlify": "https://sisalima-weather.netlify.app/"
+{
+  "frontend": {
+    "name": "Frontend ▪-reactjs",
+    "projects": [
+      {
+        "id": 5,
+        "name": "Ecommerce",
+        "type": "Frontend ▪ React.js",
+        "tags": [
+          "@reduxjs/toolkit",
+          "Redux thunk",
+          "Login, token-Bearer",
+          "react-router-dom",
+          "Filtros, busqueda (js)"
+        ],
+        "image": "ecommerce-acdlo.webp",
+        "description": "funcionalidades básicas de un ecommerce con JavaScript",
+        "github": "https://github.com/diegosisalima/ecommerce-acdlo.git",
+        "netlify": "https://sisalima-ecommerce-acdlo.netlify.app/"
+      },
+      {
+        "id": 4,
+        "name": "Pokedex",
+        "type": "Frontend ▪ React",
+        "tags": [
+          "@reduxjs/toolkit",
+          "Axios",
+          "react-router",
+          "rutas protegidas",
+          "JavaScript"
+        ],
+        "image": "pokedex.webp",
+        "description": "Sitio que implementa: redux, rutas anidadas y protegidas",
+        "github": "https://github.com/diegosisalima/pokedex.git",
+        "netlify": "https://sisalima-pokedex.netlify.app/"
+      },
+      {
+        "id": 3,
+        "name": "CRUD Users",
+        "type": "Frontend ▪ React",
+        "tags": ["Métodos HTTP", "react-hook-form", "Axios", "JavaScript"],
+        "image": "crud-users.webp",
+        "description": "Sitio que implementa los métodos http: GET, POST, PUT/PATCH, DELETE",
+        "github": "https://github.com/diegosisalima/crud-users.git",
+        "netlify": "https://sisalima-crud-users.netlify.app/"
+      },
+      {
+        "id": 2,
+        "name": "Wiki, Rick and Morty",
+        "type": "Frontend ▪ React",
+        "tags": [
+          "Axios",
+          "inputs controlados",
+          "diseño puro con css",
+          "JavaScript"
+        ],
+        "image": "rick-and-morty.webp",
+        "description": "Sitio que busca los residentes según su locación de la serie Rick and Morty",
+        "github": "https://github.com/diegosisalima/rick-and-morty.git",
+        "netlify": "https://sisalima-rick-and-morty.netlify.app/"
+      },
+      {
+        "id": 1,
+        "name": "Clima",
+        "type": "Frontend ▪ React",
+        "tags": ["HTML", "CSS", "JavaScript"],
+        "image": "app-clima.webp",
+        "description": "Sitio que accede a tu ubicación para proveer datos del clima local.",
+        "github": "https://github.com/diegosisalima/weather-app",
+        "netlify": "https://sisalima-weather.netlify.app/"
+      }
+    ]
   }
-]
+}

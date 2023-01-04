@@ -12,7 +12,9 @@ const Home = () => {
         </div>
       </div>
       <About />
-      <Projects />
+      <div className="hero-image-filter">
+        <Projects />
+      </div>
       <Contact />
     </>
   );
