@@ -10,8 +10,8 @@ const About = () => {
       </h2>
       <section className="about__main">
         <p className="about__summary">
-          Me gusta estar en constante aprendizaje para fortalecer mis
-          habilidades y aptitudes; amante del minimalismo, buenas prácticas y
+          Autodidacta, siempre en constante aprendizaje para fortalecer mis
+          habilidades y aptitudes, amante del minimalismo, buenas prácticas y
           del código bien organizado.
         </p>
         <progress />
