@@ -14,7 +14,7 @@ const Presentation = () => {
         <span>📍 Cuenca, Ecuador</span>
         <span>🎂 1995-12-9</span>
       </p>
-      <h2 className="gradient-text">Frontend developer</h2>
+      <h2 className="gradient-text">Desarrollador Frontend</h2>
       <ul className="presentation__icons-container">
         <li className="presentation__icons-li">
           <a

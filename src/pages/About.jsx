@@ -37,7 +37,7 @@ const About = () => {
             amerita,
           </p>
           <p>
-            He realizado varios <a href="">proyectos frontend</a> con{" "}
+            He realizado varios <a href="/#/projects">proyectos frontend</a> con{" "}
             <b>
               <a
                 href="https://es.reactjs.org/docs/getting-started.html"
