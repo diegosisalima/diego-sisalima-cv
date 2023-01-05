@@ -2,6 +2,7 @@ import "./App.css";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import { Home, About, Projects, Contact } from "./pages/Index.jsx";
 import Nav from "./components/Nav";
+// import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        {/* <Footer /> */}
       </HashRouter>
     </div>
   );

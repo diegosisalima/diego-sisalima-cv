@@ -1,0 +1,7 @@
+.footer {
+  backdrop-filter: brightness(0.4);
+  -webkit-backdrop-filter: brightness(0.4);
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0;
+}

@@ -1,2 +1,2 @@
-# sisalima-cv
-# diego-sisalima-cv
+#Deploy:
+https://sisalima-cv.netlify.app/
