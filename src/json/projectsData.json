@@ -1,7 +1,16 @@
 {
   "frontend": {
-    "name": "Frontend ▪-reactjs",
     "projects": [
+      {
+        "id": 6,
+        "name": "Lista de Tareas",
+        "type": "Frontend ▪ React.js",
+        "tags": ["Login, token-Bearer", "react-router-dom"],
+        "image": "todolist.webp",
+        "description": "Aplicación para el registro de tareas",
+        "github": "https://github.com/diegosisalima/todo-list-app.git",
+        "netlify": "https://todolistapp-sisalima.netlify.app/"
+      },
       {
         "id": 5,
         "name": "Ecommerce",

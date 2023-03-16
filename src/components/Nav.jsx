@@ -17,14 +17,24 @@ const Nav = () => {
       </Link>
       <ul className={`nav__ul ${isNavShow && "nav__ul-show nav-bg"} `}>
         <li>
-          <Link to="/about" className="nav__a" onClick={handleNav}>
+          <NavLink
+            to="/about"
+            className="nav__a"
+            onClick={handleNav}
+            style={({ isActive }) => (isActive ? styleNavActive : undefined)}
+          >
             Acerca de
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/projects" className="nav__a" onClick={handleNav}>
+          <NavLink
+            to="/projects"
+            className="nav__a"
+            onClick={handleNav}
+            style={({ isActive }) => (isActive ? styleNavActive : undefined)}
+          >
             Proyectos
-          </Link>
+          </NavLink>
         </li>
         <li>
           <NavLink

@@ -1,4 +1,5 @@
 import "./css/presentation.css";
+import { Link } from "react-router-dom";
 const Presentation = () => {
   return (
     <div className="presentation">
@@ -19,7 +20,7 @@ const Presentation = () => {
         <li className="presentation__icons-li">
           <a
             className="presentation__a"
-            href="https://www.linkedin.com/in/diego-sisalima-b2a4458a/"
+            href="https://www.linkedin.com/in/diego-sisalima/"
             rel="noreferrer"
             target="_blank"
             title="linkedin"
@@ -39,14 +40,14 @@ const Presentation = () => {
           </a>
         </li>
         <li className="presentation__icons-li">
-          <a className="presentation__a" href="#contact" title="Contact">
+          <Link className="presentation__a" to="/contact" title="Contact">
             <i class="bx bxs-envelope"></i>
-          </a>
+          </Link>
         </li>
         <li className="presentation__icons-li">
           <a
             className="presentation__a"
-            href="https://drive.google.com/file/d/1mqHetKah_iX2NorzOkCIp3V1MuG1JIb_/view?usp=share_link"
+            href="https://docs.google.com/document/d/1y2Hr3rHf6fhXUGewHTB0EQ_JiKyiVMeU/edit?usp=sharing&ouid=103605140254930368268&rtpof=true&sd=true"
             target="_blank"
             rel="noreferrer"
             title="CV"
