@@ -36,7 +36,7 @@ const About = () => {
           </p>
           <p>
             Abierto al aprendizaje de nuevos lenguajes, actualmente estoy
-            aprendiendo{" "}
+            desarrollando habilidades con{" "}
             <a href="https://nextjs.org/" target={"_blank"}>
               Next js
             </a>{" "}

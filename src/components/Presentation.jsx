@@ -4,7 +4,8 @@ const Presentation = () => {
   return (
     <div className="presentation">
       <div className="drop-shadow">
-        <img className="presentation__img" src={"diego.webp"} alt="" />
+        {/* <img className="presentation__img" src={"diego.webp"} alt="" /> */}
+        <i className="bx bxs-hand bx-tada"></i>
       </div>
       <div className="presentation__name drop-shadow">
         <h1 className="presentation__h1-border ">Diego Sisalima</h1>
